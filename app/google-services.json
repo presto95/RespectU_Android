@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "120308407751",
+    "firebase_url": "https://respectu-ios.firebaseio.com",
+    "project_id": "respectu-ios",
+    "storage_bucket": "respectu-ios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120308407751:android:75c02c4ece01351a",
+        "android_client_info": {
+          "package_name": "com.respect.presto.respectu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120308407751-4jfv5jh6j5lduuoasv4vu2mr09dljfg5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjZPcOQ7FzPee2zDkbrfa18B8YyX5-kBE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

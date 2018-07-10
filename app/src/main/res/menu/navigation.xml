@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigationSong"
+        android:icon="@drawable/ic_song"
+        android:title="@string/Song" />
+
+    <item
+        android:id="@+id/navigationMission"
+        android:icon="@drawable/ic_mission"
+        android:title="@string/Mission" />
+
+    <item
+        android:id="@+id/navigationTrophy"
+        android:icon="@drawable/ic_trophy"
+        android:title="@string/Trophy" />
+    <item
+        android:id="@+id/navigationPlaylist"
+        android:icon="@drawable/ic_playlist"
+        android:title="@string/Playlist" />
+
+    <item
+        android:id="@+id/navigationMore"
+        android:icon="@drawable/ic_more"
+        android:title="@string/More" />
+</menu>

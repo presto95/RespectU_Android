@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+
+    <TextView
+        android:id="@+id/labelColor"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_height="40dp"
+        android:layout_width="10dp" />
+    <TextView
+        android:id="@+id/labelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2Nite"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:layout_alignTop="@id/labelColor"
+        android:layout_toRightOf="@id/labelColor"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/labelComposer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ND Lee"
+        android:textSize="13sp"
+        android:textColor="#bdbdbd"
+        android:layout_alignBottom="@+id/labelColor"
+        android:layout_toRightOf="@id/labelColor"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/labelBpm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BPM 110"
+        android:textSize="12sp"
+        android:textColor="#000000"
+        android:layout_marginRight="10dp"
+        android:layout_alignTop="@id/labelColor"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/labelMaximum"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/labelBpm"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/labelHard"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/labelMaximum"
+        android:layout_below="@id/labelBpm"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/labelNormal"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/labelHard"
+        android:layout_below="@id/labelBpm"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/labelMaximumRecord"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="PP"
+        android:textColor="#bdbdbd"
+        android:textSize="10sp"
+        android:layout_below="@id/labelBpm"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="14dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/labelHardRecord"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="PP"
+        android:textColor="#bdbdbd"
+        android:textSize="10sp"
+        android:layout_below="@id/labelBpm"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@id/labelMaximumRecord"
+        android:layout_marginTop="14dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/labelNormalRecord"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:text="PP"
+        android:textColor="#bdbdbd"
+        android:textSize="10sp"
+        android:layout_below="@id/labelBpm"
+        android:layout_toLeftOf="@id/labelHardRecord"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="14dp"
+        android:textAlignment="center"/>
+</RelativeLayout>

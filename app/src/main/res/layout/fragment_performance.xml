@@ -1,0 +1,310 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context="com.respect.presto.respectu.PerformanceFragment"
+    android:background="#ffffff">
+
+    <info.hoang8f.android.segmented.SegmentedGroup
+        android:id = "@+id/segmentedControl"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        segmentedgroup:sc_border_width="1dp"
+        segmentedgroup:sc_checked_text_color="#ffffff"
+        segmentedgroup:sc_tint_color="#0000ff"
+        segmentedgroup:sc_corner_radius="10dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <RadioButton
+            android:id="@+id/segment0"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text = "4B"
+            android:layout_weight="1"
+            style = "@style/RadioButton"/>
+        <RadioButton
+            android:id="@+id/segment1"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text = "5B"
+            style = "@style/RadioButton"/>
+        <RadioButton
+            android:id="@+id/segment2"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text = "6B"
+            android:layout_weight="1"
+            style = "@style/RadioButton"/>
+        <RadioButton
+            android:id="@+id/segment3"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:text = "8B"
+            android:layout_weight="1"
+            style = "@style/RadioButton"/>
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+
+
+    <TextView
+        android:id="@+id/labelPerformanceTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="songTitle"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/segmentedControl"/>
+    <TextView
+        android:id="@+id/labelPerformanceColor"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/labelPerformanceTitle"
+        android:background="#000"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/labelPerformanceRecommendedSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="recommendedSpeed"
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:layout_below="@id/labelPerformanceColor"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/labelSkillPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Skill Point : "
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:layout_below="@id/labelPerformanceRecommendedSpeed"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/labelSkillPoint"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Rank"
+            android:textAllCaps="true"
+            android:textSize="11sp"
+            android:textColor="#bdbdbd"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Accuracy"
+            android:textAllCaps="true"
+            android:textSize="11sp"
+            android:textColor="#bdbdbd"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Note"
+            android:textAllCaps="true"
+            android:textSize="11sp"
+            android:textColor="#bdbdbd"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayoutNormalTitle"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayoutTitle"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="NORMAL"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/labelPerformanceNormalDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="★★★★"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/labelPerformanceNormalColor"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:background="#000"
+        android:layout_below="@id/linearlayoutNormalTitle"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:id="@+id/linearlayoutNormalPerformance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/labelPerformanceNormalColor"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/labelNormalRankButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textColor="#3333ff"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/labelNormalAccuracyButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="100.00%"
+            android:textColor="#3333ff"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/labelNormalNoteButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="PERFECT PLAY"
+            android:textColor="#3333ff"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayoutHardTitle"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayoutNormalPerformance"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="HARD"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/labelPerformanceHardDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="★★★★"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/labelPerformanceHardColor"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:background="#000"
+        android:layout_below="@id/linearlayoutHardTitle"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:id="@+id/linearlayoutHardPerformance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/labelPerformanceHardColor"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/labelHardRankButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textColor="#3333ff"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/labelHardAccuracyButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="100.00%"
+            android:textColor="#3333ff"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/labelHardNoteButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="PERFECT PLAY"
+            android:textColor="#3333ff"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearlayoutMaximumTitle"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearlayoutHardPerformance"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="MAXIMUM"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/labelPerformanceMaximumDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="★★★★"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/labelPerformanceMaximumColor"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:background="#000"
+        android:layout_below="@id/linearlayoutMaximumTitle"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:id="@+id/linearlayoutMaximumPerformance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/labelPerformanceMaximumColor"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/labelMaximumRankButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textColor="#3333ff"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/labelMaximumAccuracyButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="100.00%"
+            android:textColor="#3333ff"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/labelMaximumNoteButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="PERFECT PLAY"
+            android:textColor="#3333ff"
+            android:gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

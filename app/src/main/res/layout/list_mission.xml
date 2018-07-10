@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <TextView
+        android:id="@+id/labelColor"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="40dp"
+        android:layout_width="10dp" />
+
+    <TextView
+        android:id="@+id/labelTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restarting Line"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_alignTop="@+id/labelColor"
+        android:layout_alignBottom="@+id/labelColor"
+        android:layout_toRightOf="@id/labelColor"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/labelSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/labelColor"
+        android:layout_alignBottom="@id/labelColor"
+        android:text="Departure"
+        android:textSize="12sp"
+        android:textColor="#bdbdbd"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center"/>
+
+
+</RelativeLayout>
