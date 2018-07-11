@@ -8,8 +8,8 @@ android {
         applicationId "com.respect.presto.respectu"
         minSdkVersion 19
         targetSdkVersion 26
-        versionCode 32
-        versionName "1.19"
+        versionCode 33
+        versionName "1.20"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
